@@ -85,10 +85,16 @@ class RenderStatic():
         saving it to RENDER_STATIC_ROOT.
         """
 
-        print("url > ",url)
-        url_list = url.strip("/").split("/")
-        filename = url_list.pop()+".html"
-        subpath = "/".join(url_list)
+        print("url > ", url)
+
+        if url == "/":
+            filename = "index.html"
+            subpath = ""
+        else:
+            url_list = url.strip("/").split("/")
+            filename = url_list.pop()+".html"
+            subpath = "/".join(url_list)
+
         savepath = os.path.join(self.savepath, subpath)
         parsed_html = ""
 

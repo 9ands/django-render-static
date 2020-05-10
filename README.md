@@ -1,7 +1,9 @@
 # Django Render Static
 ### A simple static site renderer for django projects using vanilla urlpatterns
 
-This isn't a Python package yet. It is a Django app that can be "installed" by placing `render_static` to the project base directory.
+This method is a good starting point if you are looking for a "base" functionality. It is easy to understand and adapt for your own projects.
+
+Please note, this isn't a Python package yet. It is a Django app that can be "installed" by placing `render_static` to the project base directory.
 
 `requests` is required.
 
